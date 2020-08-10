@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.index.css" media="screen and (min-width: 480px)">
+        <script></script>
+        <title>Document</title>
+    </head>
+    <body onload="preload_time_out();" style="margin:0;" id="body">
+        <div id="container-loader">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <div id="IE-ns">
+            <p>Our website does'nt support IE9(and earlier). Please update your browser and come back. </p>
+            <img src="Img/sad-face.png" alt="IE-not-supported" id="IE-ns-img">
+        </div>
+        <div id="browser-ns">
+            <p>Our website does'nt support your browser. Please change your browser and come back. </p>
+            <img src="Img/sad-face.png" alt="Browser-not-supported" id="Browser-ns-img">
+        </div> 
+        <div id="container">
+            <div class="navbar" id="navbar">
+                <a href="javascript:void(0)" class="menu-close-btn" onclick="closeNav()">&times;</a>
+                <div id="navbar-content" class="navbar-content">
+                    <a href="">item1</a>
+                    <a href="">item2</a>
+                    <a href="">item3</a>
+                    <a href="">item4</a>
+                </div>
+            </div>
+            <div id="main-opacity"></div>
+            <div class="menu-icon" onclick="openNav()">
+                <span class="menu-icon-tip" id="menu-icon-tip">open Navigation bar</span>
+                <div class="rect-menu">
+                    <div class="menu-icon-rect-1"></div>
+                    <div class="menu-icon-rect-2"></div>
+                    <div class="menu-icon-rect-3"></div>
+                </div>
+                <div class="circle-menu">
+                    <div class="menu-icon-circle"></div>
+                    <div class="menu-icon-circle"></div>
+                    <div class="menu-icon-circle"></div>
+                </div>
+            </div>
+            <div class="main" id="main">
+            </div>
+        </div>
+        <script src="JS/detect.js"></script>
+        <script src="JS/JQuery.js"></script>
+        <script src="JS/index.javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,524 @@
+/*reset and bx sizing att */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+::selection{
+	background: #f1f1f1;
+	color: #5ce6ff;
+	border-radius: 20px;
+}
+/* remove text decoration */
+a {
+    text-decoration: none;
+}
+
+/* remove bullet from list */
+li {
+    list-style: none;
+}
+
+/* set the menu font family */
+@font-face {
+    font-family: "menu";
+    src: url(../font/menu.ttf);
+}
+body{
+	background: rgb(51, 51, 51);
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+/* style for IE not supported */
+#IE-ns {
+    display: none;
+    background-color: #111111;
+    color: #818181;
+    font-size: 40px;
+    padding: 18px;
+    height: 1000px;
+    text-align: center;
+    font-family: menu;
+    padding-top: 100px;
+}
+
+/* style for sad face img*/
+#IE-ns-img {
+    border-radius: 50%;
+    margin: 40px auto;
+}
+#browser-ns {
+    display: none;
+    background-color: #111111;
+    color: #818181;
+    font-size: 40px;
+    padding: 18px;
+    height: 1000px;
+    text-align: center;
+    font-family: menu;
+    padding-top: 100px;
+}
+
+/* style for sad face img*/
+#Browser-ns-img {
+    border-radius: 50%;
+    margin: 40px auto;
+}
+/* style for loader */
+#container-loader {
+    width: 200px;
+    height: 200px;
+    padding-top: 200px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+}
+
+/* style for loader balls*/
+.ball {
+    width: 20px;
+    height: 20px;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+/* style for loader ball 1*/
+.ball:nth-child(1) {
+    background: red;
+    -webkit-animation: right 1.05s infinite ease-in-out;
+    ; -o-animation: right 1.05s infinite ease-in-out;
+    ; animation: right 1.05s infinite ease-in-out;
+    ; }
+
+/* style for loader ball 2*/
+.ball:nth-child(2) {
+    background: orange;
+    -webkit-animation: left 1.1s infinite ease-in-out;
+    -o-animation: left 1.1s infinite ease-in-out;
+    animation: left 1.1s infinite ease-in-out;
+}
+
+/* style for loader ball 3*/
+.ball:nth-child(3) {
+    background: yellow;
+    -webkit-animation: right 1.15s infinite ease-in-out;
+    -o-animation: right 1.15s infinite ease-in-out;
+    animation: right 1.15s infinite ease-in-out;
+}
+
+/* style for loader ball 4*/
+.ball:nth-child(4) {
+    background: green;
+    -webkit-animation: left 1.2s infinite ease-in-out;
+    -o-animation: left 1.2s infinite ease-in-out;
+    animation: left 1.2s infinite ease-in-out;
+}
+
+/* style for loader ball 5*/
+.ball:nth-child(5) {
+    background: blue;
+    -webkit-animation: right 1.25s infinite ease-in-out;
+    -o-animation: right 1.25s infinite ease-in-out;
+    animation: right 1.25s infinite ease-in-out;
+}
+
+/* style for loader ball 6*/
+.ball:nth-child(6) {
+    background: indigo;
+    -webkit-animation: left 1.3s infinite ease-in-out;
+    -o-animation: left 1.3s infinite ease-in-out;
+    animation: left 1.3s infinite ease-in-out;
+}
+
+/* style for loader ball 7*/
+.ball:nth-child(7) {
+    background: purple;
+    -webkit-animation: right 1.35s infinite ease-in-out;
+    -o-animation: right 1.35s infinite ease-in-out;
+    animation: right 1.35s infinite ease-in-out;
+}
+
+/* animation 'right' for old chrome and safari */
+@-webkit-keyframes right {
+    0% {
+        -webkit-transform: translate(-40px)
+    }
+
+    50% {
+        -webkit-transform: translate(40px)
+    }
+
+    100% {
+        -webkit-transform: translate(-40px)
+    }
+}
+
+/* animation 'right' for old opera */
+@-o-keyframes right {
+    0% {
+        -o-transform: translate(-40px)
+    }
+
+    50% {
+        -o-transform: translate(40px)
+    }
+
+    100% {
+        -o-transform: translate(-40px)
+    }
+}
+
+/* animation 'right' for old mozilla firefox */
+@-moz-keyframes right {
+    0% {
+        -o-transform: translate(-40px)
+    }
+
+    50% {
+        -o-transform: translate(40px)
+    }
+
+    100% {
+        -o-transform: translate(-40px)
+    }
+}
+
+/* animation 'right' */
+@keyframes right {
+    0% {
+        transform: translate(-40px)
+    }
+
+    50% {
+        transform: translate(40px)
+    }
+
+    100% {
+        transform: translate(-40px)
+    }
+}
+
+/* animation 'left' for old chrome and safari */
+@-webkit-keyframes left {
+    0% {
+        -webkit-transform: translate(40px)
+    }
+
+    50% {
+        -webkit-transform: translate(-40px)
+    }
+
+    100% {
+        -webkit-transform: translate(40px)
+    }
+}
+
+/* animation 'left' for old opera*/
+@-o-keyframes left {
+    0% {
+        -o-transform: translate(40px)
+    }
+
+    50% {
+        -o-transform: translate(-40px)
+    }
+
+    100% {
+        -o-transform: translate(40px)
+    }
+}
+
+/* animation 'left' for old mozilla fire fox*/
+@-moz-keyframes left {
+    0% {
+        -webkit-transform: translate(40px)
+    }
+
+    50% {
+        -webkit-transform: translate(-40px)
+    }
+
+    100% {
+        -webkit-transform: translate(40px)
+    }
+}
+
+/* animation 'left' */
+@keyframes left {
+    0% {
+        transform: translate(40px)
+    }
+
+    50% {
+        transform: translate(-40px)
+    }
+
+    100% {
+        transform: translate(40px)
+    }
+}
+
+/* Add animation to "page content" */
+#container {
+    position: relative;
+    -webkit-animation-name: animate1;
+    -webkit-animation-duration: 1s;
+    animation-name: animate1;
+    animation-duration: 1s;
+    display: none;
+}
+
+/*animation for "page content"  for old chrome and safari*/
+@-webkit-keyframes animate1 {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+/*animation for "page content"  for old opera*/
+@-o-keyframes animate1 {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+/*animation for "page content"  for old mozilla firefox*/
+@-moz-keyframes animate1 {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+/*animation for "page content"*/
+@keyframes animate1 {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.menu-icon {
+    width: auto;
+    height: auto;
+    position: fixed;
+    margin: 20px 30px;
+    cursor: pointer;
+    float: right;
+    transition: background 0.5s;
+}
+.menu-icon-tip {
+    visibility: hidden;
+    width: 110px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-family: menu;
+    font-size: 15px;
+}
+
+.menu-icon-tip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 5px;
+    border-style: solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+	border-bottom: 10px solid #555;
+	border-top: none ;
+}
+
+.menu-icon:hover > .menu-icon-tip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rect-menu {
+    width: auto;
+    height: auto;
+    margin-left: 11px;
+}
+
+.menu-icon-rect-1 {
+    width: 65px;
+    height: 9px;
+    background: rgb(196, 196, 196);
+    border-radius: 100px;
+    margin: 3px 1px;
+}
+
+.menu-icon-rect-2 {
+    width: 35px;
+    height: 9px;
+    background: rgb(196, 196, 196);
+    border-radius: 30px;
+    margin: 3px 1px;
+}
+
+.menu-icon-rect-3 {
+    width: 45px;
+	height: 9px;
+    background: rgb(196, 196, 196);
+    border-radius: 30px;
+    margin: 3px 1px;
+}
+
+.circle-menu {
+    width: auto;
+    height: auto;
+    margin-top: -36.5px;
+}
+
+.menu-icon-circle {
+    width: 	9px;
+    height: 9px;
+    background: rgb(196, 196, 196);
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+.menu-icon:hover .menu-icon-rect-1 {
+    background-color: rgb(255, 255, 255);
+}
+.menu-icon:hover .menu-icon-rect-2 {
+    background-color: rgb(255, 255, 255);
+}
+.menu-icon:hover .menu-icon-rect-3 {
+    background-color: rgb(255, 255, 255);
+}
+.menu-icon:hover .menu-icon-circle {
+    background-color: rgb(255, 255, 255);
+}
+#main-opacity{
+    visibility: hidden;
+    z-index: 100;
+    background: rgba(54, 54, 54, 0.753);
+    width: calc(100% - 250px);
+    height: 100%;
+}
+.navbar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 1s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    font-family: menu;
+}
+
+.navbar-content {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    left: -70px;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.navbar-content a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-size: 40px;
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rgb(207, 207, 207);
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {
+        overflow-y: auto;
+    }
+
+    .navbar a {
+        font-size: 20px
+    }
+
+    .menu-close-btn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#main {
+    transition: margin-left .7s;
+    padding: 20px;
+    font-family: menu;
+    font-size: 40px;
+}
+.rect{
+    width: 300px;
+    height: 100px;
+    background: cyan;
+    float: right;
+}
