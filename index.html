@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.index.css" type="text/css">
         <script data-ad-client="ca-pub-7508566907964390" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link rel="stylesheet" href="css/style.index.css">
         <link rel="icon" href="favicon.png">
-        <title>Y-Rezaie</title>
+        <title>Document</title>
     </head>
     <body onload="preload_time_out();" style="margin:0;" id="body">
         <div id="container-loader">
@@ -30,13 +30,12 @@
             <div class="navbar" id="navbar">
                 <a href="javascript:void(0)" class="menu-close-btn" onclick="closeNav()">&times;</a>
                 <div id="navbar-content" class="navbar-content">
-                    <a href="">item1</a>
+                    <a href="#">Home</a>
                     <a href="">item2</a>
                     <a href="">item3</a>
                     <a href="">item4</a>
                 </div>
             </div>
-            <div id="main-opacity"></div>
             <div class="menu-icon" onclick="openNav()">
                 <span class="menu-icon-tip" id="menu-icon-tip">open Navigation bar</span>
                 <div class="rect-menu">
@@ -51,6 +50,47 @@
                 </div>
             </div>
             <div class="main" id="main">
+                <header class="header" id="header">
+                    <div class="icon">
+                        <a href="https://y-rezaie.github.io"><img src="./Img/yr.jpg" alt="icon" title="Y-Rezaie"></a>
+                    </div>
+                    <div class="slogan" id="slogan">
+                        Everything under sun about technology
+                    </div>
+                </header>
+                <nav class="nav-top" id="nav-top">
+                    <ul>
+                        <li><a href="https://y-rezaie.github.io">Home</a></li>
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                    </ul>
+                    <div class="date-nav-top" id="date-nav-top">
+                        <script language="JavaScript1.2">
+                            var months=new Array(13);
+                            months[1]="January";
+                            months[2]="February";
+                            months[3]="March";
+                            months[4]="April";
+                            months[5]="May";
+                            months[6]="June";
+                            months[7]="July";
+                            months[8]="August";
+                            months[9]="September";
+                            months[10]="October";
+                            months[11]="November";
+                            months[12]="December";
+                            var time=new Date();
+                            var lmonth=months[time.getMonth() + 1];
+                            var date=time.getDate();
+                            var year=time.getYear();
+                            if (year < 2000)    // Y2K Fix, Isaac Powell
+                            year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+                            document.write("<center>" + lmonth + " ");
+                            document.write(date + ", " + year + "</center>");
+                            </script>
+                    </div>
+                </nav>
             </div>
         </div>
         <script src="JS/JQuery.js"></script>
