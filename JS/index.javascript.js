@@ -62,21 +62,33 @@ if (browser.agent === "MSIE" && browser.version <= 9) {
     document.getElementById("IE-ns").style.display = "block";
     document.getElementById("body").style.overflow = "hidden";
 }
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
     document.getElementById("navbar").style.width = "250px";
     document.getElementById("navbar-content").style.marginLeft = "60px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(51, 51, 51, 0.726)";
-    document.getElementById("main-opacity").style.visibility = "visible";
-    document.getElementById("menu-icon-tip").style.opacity = "0";
+    document.getElementById("header").style.width = "1000px";
+    document.getElementById("nav-top").style.width = "923px";
+    document.getElementById("nav-top").style.marginLeft = "115px";
+    document.getElementById("slogan").style.fontSize = "45px";
+    document.getElementById("slogan").style.marginTop = "-98px";
+    //document.body.style.backgroundColor = "rgba(51, 51, 51, 0.726)";
+    const menuIconTip = document.getElementById("menu-icon-tip");
+    menuIconTip.classList.add('active');
 }
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
     document.getElementById("navbar").style.width = "0";
     document.getElementById("navbar-content").style.marginLeft = "-200px";
     document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "rgb(51, 51, 51)";
-    document.getElementById("menu-icon-tip").style.opacity = "1";
-    document.getElementById("main-opacity").style.visibility = "hidden";
+    document.getElementById("header").style.width = "1200px";
+    document.getElementById("nav-top").style.width = "1123px";
+    document.getElementById("nav-top").style.marginLeft = "140px";
+    document.getElementById("slogan").style.fontSize = "55px";
+    document.getElementById("slogan").style.marginTop = "-110px";
+    //document.body.style.backgroundColor = "rgb(51, 51, 51)";
+    const menuIconTip = document.getElementById("menu-icon-tip");
+    menuIconTip.classList.remove('active');
 }
+   /* $(function() {
+        $('a[href]').attr('target', '_blank');
+    }); */
